@@ -78,8 +78,12 @@ header .mobile {
   display: none;
 }
 
+.desktop .button {
+  display: none;
+}
+
 @media only screen and (max-width: 780px) {
-  header .mobile .button {
+  header .desktop .button {
     display: inline-block;
     padding: .1875rem .5rem;
     background-color: #9dc20b;
@@ -92,6 +96,14 @@ header .mobile {
 @media only screen and (max-width: 450px){
   header .desktop {
     display: none;
+  }
+
+  header .mobile .button {
+    display: inline-block;
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
   }
 
   header .mobile {
